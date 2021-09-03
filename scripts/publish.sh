@@ -17,6 +17,11 @@ echo ${PUBLISH_VERSIONS}
 
 for v in $PUBLISH_VERSIONS
 do
+  # nothing Docker image...
+  if [[ $v = "13.9.0" ]]; then
+    continue
+  fi
+
   sed -i -e "s/^FROM node:.*/FROM node:${v}/" Dockerfile
 
   docker build -t catsoss/docker-node-headless-chrome-ja:${v} .
