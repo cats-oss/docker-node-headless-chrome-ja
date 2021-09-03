@@ -1,4 +1,4 @@
-FROM node:14.17.5
+FROM node:14.17.6
 
 # @see https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
 RUN apt-get update -y
