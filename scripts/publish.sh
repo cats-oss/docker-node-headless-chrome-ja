@@ -18,7 +18,7 @@ echo ${PUBLISH_VERSIONS}
 for v in $PUBLISH_VERSIONS
 do
   # nothing Docker image...
-  if [[ $v = "13.9.0" || $v = "13.10.0" || $v = "16.14.1" ]]; then
+  if [[ $v = "13.9.0" || $v = "13.10.0" || $v = "16.14.1" || $v = "17.7.0" ]]; then
     continue
   fi
 
